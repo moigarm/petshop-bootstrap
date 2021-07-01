@@ -38,23 +38,90 @@
                 </form><label class="form-label d-flex mb-0" for onclick="window.location.href = 'carrito.html'"><i class="fa fa-shopping-cart fa-3x" style="color: var(--white);height: 50px;width:50px;"></i></label><a class="btn btn-light action-button" role="button" href="login.html" style="border-radius: 10px;">Mi cuenta</a>
             </div>
         </div>
-    </nav><div class="row text-center" style="padding: 0 20%;">
-<h2>Acerca de nosotros</h2>
-    <p style="text-align:justify;">Bienvenidos a Pet shop, su tienda de alimentos, accesorios y 
-        su proveedora de servicios para sus mascotas, el amor por los 
-        mimados del hogar es lo que nos permite brindar un servicio 
-        de calidad totalmente sincero, el esfuerzo del equipo de Pet shop
-        hace que podamos brindarle con los precios muy ajustados la mejor 
-        calidad del mercado, llegando a sobrepasar los estándares de la industria
-        sin llegar a tan elevados precios, por lo que siempre es más accessible
-        para que su mascota pueda disfrutar de lo que podemos ofrecer!.</p>
+    </nav><div class="shopping-cart">
+<div class="px-4 px-lg-0">
 
-    <p>Esperamos que disfrute de nuestros productos y servicios a como nosotros
-        disfrutamos proveyéndolos.</p>
-</div><div class="row bg-dark text-white">
-<div style="text-align: center;">
-  <p style="font-size: 2rem;">Nuestra ubicación</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.9166199756049!2d-86.22422194054073!3d12.13693373249311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sUniversidad%20Nacional%20de%20Ingenier%C3%ADa%20(RUPAP)!5e0!3m2!1ses-419!2sni!4v1623902190924!5m2!1ses-419!2sni" width="600" height="450" style="margin: 20px auto;max-width:80%;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-5 rounded mb-5">
+
+          <!-- Shopping cart table -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="p-2 px-3 text-uppercase">Producto</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Precio</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Cantidad</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Remover</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="tbody-shopping">
+                <tr>
+                  <th>
+                    <div class="p-2">
+                      <img src="assets/img/product.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Croquetas para perro</a></h5><span class="text-muted font-weight-normal font-italic d-block">Categoría: Comida para perro</span>
+                      </div>
+                    </div>
+                  </th>
+                    <td><p style="color: black;background-color:green;">C$149.00</p></td>
+                  <td class="">2</td>
+                  <td class=""><a href="#" class=""><i class="fa fa-trash fa-2x"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End -->
+        </div>
+      </div>
+
+      <div class="row py-5 p-4 bg-white rounded shadow-sm">
+        <div class="col-lg-6">
+          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Cupón de descuento</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">Si tiene un cupón de descuento, por favor introduzcalo</p>
+            <div class="input-group mb-4 border rounded-pill p-2">
+              <input type="text" placeholder="Aplicar cupón" aria-describedby="button-addon3" class="form-control border-0">
+              <div class="input-group-append border-0">
+                <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i class="fa fa-gift mr-2"></i>Aplicar cupón</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Sugerencias</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">Si tiene alguna sugerencia puede hacernosla llegar en el cuadro de abajo</p>
+            <textarea name="" cols="30" rows="2" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Resumen de orden</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">El envío y costes adicionales son calculados en base a su compra</p>
+            <ul class="list-unstyled mb-4">
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Subtotal </strong><strong>C$298.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Envío</strong><strong>C$0.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Impuesto</strong><strong>C$44.70</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                <h5 class="font-weight-bold">C$342.70</h5>
+              </li>
+            </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Completar compra</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 </div>
     <footer class="footer-clean">

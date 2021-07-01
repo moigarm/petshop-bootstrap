@@ -89,3 +89,7 @@
   width: inherit;
 }
 
+#shopping-cart-petshop tbody th {
+  background-color: #ff0000;
+}
+
